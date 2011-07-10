@@ -18,3 +18,15 @@ Android menu actions:
       appropriate pixels masked off based on the non-alpha regions of the
       content and elastic regions created by the 'Prepare as 9-patch' option
       above.
+
+   Image->Android->Save all resolutions
+      Saves three images into the resources directory specified at running
+      time -- or some other way through batch mode, but I haven't tried that
+      yet.  Based on the images 'resolution' information (see Scale Image) it
+      will resize the image for all of ldpi, mdpi, and hdpi before saving them
+      into the subdirectories (under the input folder) "drawable-ldpi",
+      "drawable-mdpi", and "drawable-hdpi".
+
+      This is nearly the culmination of what I was hoping, in some wild
+      dreams, to do... and in curiously short time. Now I just want to make
+      this script deal also with images that are not 9-patch images.
